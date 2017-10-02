@@ -1,0 +1,13 @@
+TACMWaveOut - is audio decompression component derived
+from TWinControl.
+
+Methods:
+
+Open(format:PWaveFormatEx); - format are for example 
+result from TACMDialog. The format is used for audio
+decompression.
+
+PlayBack(data:pointer;size:integer); - play(decompress)
+audio data.
+
+Close();close playing handle

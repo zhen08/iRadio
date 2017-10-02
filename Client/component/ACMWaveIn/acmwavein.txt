@@ -1,0 +1,21 @@
+TACMWaveIn - this component is used for sampling 
+audio (directly or through ACM codecs). This
+component is derived from TWinControl.
+
+TACMWaveIn - have 2 methods:
+
+Open(format:PWaveFormatEx); format is  for example 
+result from TACMDialog and the selected format is
+used for compression. After executing this method
+start component with sampling.
+
+Close(); this method close the audio sampling
+
+Events:
+
+OnData(data:PChar;bytesrecorded:integer); - this event
+is called when buffer is full. Data are audio data and 
+bytesrecorded is length of audio data.
+ 
+
+
